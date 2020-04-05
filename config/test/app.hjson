@@ -1,0 +1,16 @@
+//服务启动配置
+{
+    port: "10169",      //服务监听端口
+    path: "dbaa",  //服务监听的path
+    //以本地地址为例,api地址为 http://127.0.0.1:10169/dbaa
+
+    CommonConf: {
+        maxHistoryDay : 59,
+        startDate : "20200121",
+        displayHistory:1,
+        provinceReturnModifyHistory:1,
+        contentNumPerPage: 10,
+        noDataVal:-999999,
+    },
+    updateInerval:30000     //缓存刷新的时间间隔，单位为ms
+}
